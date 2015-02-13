@@ -19,6 +19,7 @@ var trackprogress = require('./routes/trackprogress');
 var settings = require('./routes/settings');
 var sendgoal = require('./routes/sendgoal');
 var help = require('./routes/help');
+var history = require('./routes/history');
 var createaccount = require('./routes/createaccount');
 var goaldetails = require('./routes/goaldetails');
 
@@ -146,6 +147,7 @@ app.get('/trackprogress', trackprogress.html);
 app.get('/settings', settings.html);
 app.get('/sendgoal', sendgoal.html);
 app.get('/help', help.html);
+app.get('/history', history.html);
 app.get('/createaccount', createaccount.html);
 app.get('/goaldetails', goaldetails.html);
 
